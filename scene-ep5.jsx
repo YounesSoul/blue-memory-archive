@@ -546,12 +546,12 @@ function ScrambleMemoryPuzzle({ onSolve, onClose }) {
 
 /* ── Deleted Message Puzzle ──────────────────────────────────── */
 const MSG_FRAGS = [
-  { id: 'rain',     text: "I'm at the crossing. It's beautiful in the rain.",         real: true  },
-  { id: 'waiting',  text: "Your train delay doesn't matter. I'll wait all day.",      real: true  },
-  { id: 'door',     text: "I found the blue door. I wanted to show you first.",       real: true  },
-  { id: 'soon',     text: "Come soon. I have something to tell you.",                 real: true  },
-  { id: 'mistake',  text: "I think I made a mistake coming here alone.",              real: false },
-  { id: 'unfinish', text: "Maybe some things are better left unfinished.",            real: false },
+  { id: 'rain',     text: "The rain makes everything look like a film. I keep looking at you.",  real: true  },
+  { id: 'door',     text: "I found the blue door. I want to show you something.",                real: true  },
+  { id: 'thinking', text: "I have been thinking about what I want to say to you all day.",       real: true  },
+  { id: 'close',    text: "Stay close. The crowd is getting thick.",                             real: true  },
+  { id: 'mistake',  text: "I think I made a mistake coming here alone.",                         real: false },
+  { id: 'unfinish', text: "Maybe some things are better left unfinished.",                       real: false },
 ];
 
 function DeletedMessagePuzzle({ onSolve, onClose }) {
@@ -733,8 +733,8 @@ function DeletedMessagePuzzle({ onSolve, onClose }) {
             {step >= 1 && (
               <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }}
                 className="t-body-it" style={{ color: 'var(--muted)', fontSize: 13 }}>
-                He sent these while he waited for her at the crossing.
-                Four messages. All written before she arrived.
+                He sent these during their last day in Tokyo together.
+                Four real messages. All written before the light changed.
               </motion.p>
             )}
             {step >= 2 && (
