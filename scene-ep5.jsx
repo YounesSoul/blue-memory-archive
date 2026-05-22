@@ -767,8 +767,8 @@ function DeletedMessagePuzzle({ onSolve, onClose }) {
 
 /* ── Blue Door Gate Puzzle ───────────────────────────────────── */
 const DOOR_SYMBOLS  = ['shibuya', 'door', 'rain', 'tickets'];
-const DOOR_CORRECT  = { shibuya: 'beginning', door: 'promise', rain: 'memory', tickets: 'hope' };
-const DOOR_MEANINGS = ['hope', 'promise', 'beginning', 'memory'];
+const DOOR_CORRECT  = { shibuya: 'sacrifice', door: 'promise', rain: 'witness', tickets: 'goodbye' };
+const DOOR_MEANINGS = ['promise', 'goodbye', 'sacrifice', 'witness'];
 
 function BlueDoorGatePuzzle({ onSolve, onClose }) {
   const [activeSym,    setActiveSym] = useState(null);
@@ -805,7 +805,7 @@ function BlueDoorGatePuzzle({ onSolve, onClose }) {
     }
   };
 
-  const symLabels = { shibuya: '渋谷', door: 'blue door', rain: 'rain', tickets: 'tickets' };
+  const symLabels = { shibuya: '渋谷', door: 'blue door', rain: 'the rain', tickets: 'her ticket' };
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
