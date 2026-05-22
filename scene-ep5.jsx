@@ -1267,7 +1267,7 @@ function Ep5HiddenTruth({ onDone }) {
               Last entry before deletion:
             </p>
             <p className="t-body-it" style={{ color: 'rgba(130,200,255,0.92)', fontSize: 14 }}>
-              "Day 1 — Shibuya crossing. 09:12. Her train cancelled. Still waiting."
+              "Day 1 — Shibuya crossing. 14:32. Crossing together. He stepped ahead. Then everything went quiet."
             </p>
           </motion.div>
         )}
@@ -1275,14 +1275,14 @@ function Ep5HiddenTruth({ onDone }) {
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-1">
             <p className="t-eyebrow" style={{ color: 'var(--glow)', fontSize: 9, letterSpacing: '0.35em' }}>HIM</p>
             <p className="t-body-it" style={{ color: 'var(--text)', fontSize: 13 }}>
-              "She was two hours away. I went to find the spot she would have loved."
+              "We were on the crossing together. I saw it coming from the left."
             </p>
           </motion.div>
         )}
         {step >= 6 && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-1">
             <p className="t-body-it" style={{ color: 'var(--text)', fontSize: 13 }}>
-              "A car crossed the signal at the wrong moment."
+              "I had one second. I used it for her."
             </p>
           </motion.div>
         )}
@@ -1290,7 +1290,7 @@ function Ep5HiddenTruth({ onDone }) {
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-1">
             <p className="t-eyebrow" style={{ color: 'var(--glitch)', fontSize: 9, letterSpacing: '0.35em' }}>UNKNOWN_ARCHIVE</p>
             <p className="t-body-it" style={{ color: 'var(--glitch)', fontSize: 13 }}>
-              "He was standing exactly where she was supposed to stand. The accident was meant for her."
+              "He stepped in front of her. The car was heading exactly where she stood."
             </p>
           </motion.div>
         )}
