@@ -1450,9 +1450,17 @@ function ArchiveClosure({ choice, memory, onRestart }) {
         {step >= 4 && (
           <motion.div initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }}
             className="flex flex-col items-center gap-3">
-            <button className="btn pulse-glow" onClick={onRestart}>
-              Return to Beginning
-            </button>
+            {choice === 'restore' ? (
+              <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+                className="t-display"
+                style={{ fontSize: 'clamp(18px,2.5vw,28px)', color: 'rgba(190,220,255,0.7)', letterSpacing: '0.55em', fontWeight: 300 }}>
+                THE  END
+              </motion.p>
+            ) : (
+              <button className="btn pulse-glow" onClick={onRestart}>
+                Return to Beginning
+              </button>
+            )}
           </motion.div>
         )}
       </div>
